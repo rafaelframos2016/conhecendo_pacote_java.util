@@ -101,5 +101,20 @@ public abstract class Conta extends Object {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+	
+	@Override
+	public boolean equals(Object obj){
+
+		Conta outra = (Conta)obj;
+	    if(this.agencia != outra.agencia){
+	        return false;
+	    }
+
+	    if(this.numero != outra.numero){
+	        return false;
+	    }
+
+	    return true;
+	}
 
 }
